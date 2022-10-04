@@ -1,0 +1,44 @@
+Class0 Structure
+Decentralized speed(on financial means) immutable(secure)
+Freedom transparant explicit strict real
+counterparty risk free & agreements of minimized trust
+On & off chain hydration (Oracle)
+
+Metamask & Etherscan
+Wallet switching  Testnet  Block explorer  Gas
+Tranfer Wei Gwei Ether
+Gas Price Gas Limit
+Eth gas station
+
+Hash
+A unique fixed length string to identify a piece of data
+Creat by placing that data into a "hash function"
+
+Block
+Hash(Block Nonce Data...)
+
+Blockchain & Mining
+Block + Prev pointer
+Genesis Block
+Peer validate mechanism & Fork
+
+Private & Public Key
+Sign & Verify
+Private key ||| > Public Key > Address
+
+Consensus
+Sybil Resistance PoW(Dynamic hard) PoS(Miner -> Validator)
+Chain Selection (Natomoko Consensus)
+Sybil & 51% Attack
+PoS & Randomness
+
+Scalability solutions: Sharding (ETH2) & Layer 1 \ Layer 2
+Main chain with parachain hanging on each block on the main chain
+Layer1: Base layer blockchain implementation("BTC/ETH...")
+Layer2: Application built on top of a layer 2
+("Rollup": Get the security from base layer & batch send transaction to layer 1)
+
+
+
+Class1 
+
