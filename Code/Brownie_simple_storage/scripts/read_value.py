@@ -2,6 +2,11 @@ from brownie import accounts, config, SimpleStorage, network
 
 network.priority_fee("auto")
 
+# cmd
+# brownie console
+# everything import in script will automatically import into command line
+# (Python shell with all smartcontract features)
+
 
 def get_account():
     # account = accounts[0]
@@ -17,7 +22,9 @@ def get_account():
 
 def read_contract():
     account = get_account()
-    print(SimpleStorage[0])
+    sp = SimpleStorage[-1]  # latest deployment
+    # ABI & Address
+    print(sp.retrieve())
 
 
 def main():
