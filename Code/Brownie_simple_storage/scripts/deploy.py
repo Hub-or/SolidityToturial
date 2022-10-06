@@ -10,12 +10,12 @@ network.priority_fee("auto")
 # brownie run (script) --network [network]
 
 
+# account = accounts[0]
+# account = accounts.load("Develop")
+# account = accounts.add(os.getenv("PRIVATE_KEY"))
+# account = accounts.add(config["wallets"]["from_key"])
+# print(account)
 def get_account():
-    # account = accounts[0]
-    # account = accounts.load("Develop")
-    # account = accounts.add(os.getenv("PRIVATE_KEY"))
-    # account = accounts.add(config["wallets"]["from_key"])
-    # print(account)
     if network.show_active() == "development":
         return accounts[0]
     else:
