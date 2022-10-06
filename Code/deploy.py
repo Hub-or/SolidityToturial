@@ -32,10 +32,12 @@ bytecode = compiled_sol["contracts"]["SimpleStorage.sol"]["SimpleStorage"]["evm"
 ]["object"]
 abi = compiled_sol["contracts"]["SimpleStorage.sol"]["SimpleStorage"]["abi"]
 
-w3 = Web3(Web3.HTTPProvider("HTTP://127.0.0.1:7545"))
-chain_id = 1337
-my_address = "0x0D86dAdeB187295d9Dc324a0029209f2cd018009"
-private_key = "0x62146c50a14ea580afe6dcd77e996fd48eeac58ace6fa8cc975e32dd1a270043"  # Add 0x at front (hexadecimal)
+w3 = Web3(
+    Web3.HTTPProvider("https://goerli.infura.io/v3/99bf48c800e34825b48c8c248518d606")
+)
+chain_id = 5
+my_address = "0x1Dae6E95bc485aE1d571e77db0454BB16655B926"
+private_key = "0xbfdac0757e8daf9e5ff8d5acfebec7bb58d448646288378ca7692002872f2799"  # Add 0x at front (hexadecimal)
 # os.getenv("PRIVATE_KEY")
 
 SimpleStorage = w3.eth.contract(abi=abi, bytecode=bytecode)
@@ -95,4 +97,3 @@ tx_hash_store = w3.eth.send_raw_transaction(signed_store_txn.rawTransaction)
 tx_receipt_store = w3.eth.wait_for_transaction_receipt(tx_hash_store)
 
 print(simple_storage.functions.retrieve().call())
-# 4:18:40
