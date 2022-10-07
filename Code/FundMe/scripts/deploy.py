@@ -23,4 +23,5 @@ def deploy():
 
 
 def main():
-    deploy()
+    fund_me = deploy()
+    print(fund_me.getPrice())

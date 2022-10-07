@@ -9,7 +9,7 @@ def fund():
     account = get_account()
     fund_me = FundMe[-1]
 
-    # print(fund_me.getPrice())
+    print(fund_me.getPrice())
     entrance_fee = fund_me.getEntranceFee() + 1
     print("Entrance fee is", entrance_fee, "in wei.")
     fund_me.fund({"from": account, "value": entrance_fee})
