@@ -18,7 +18,8 @@ def deploy():
         {"from": account},
         publish_source=config["networks"][network.show_active()].get("verify"),
     )  # publish_source=True  .get to know errors for unset values
-    print(fund_me)
+    # print(fund_me)
+    return fund_me
 
 
 def main():
